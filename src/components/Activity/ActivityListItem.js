@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-const ActivityItem = ({ item }) => {
+const ActivityListItem = ({ item }) => {
     const { title, dueDate, duration, dealTitle, contactName, companyName, tags } = item;
     const [checked, setChecked] = useState(false);
     return (
@@ -40,4 +40,4 @@ const ActivityItem = ({ item }) => {
     );
 };
 
-export default ActivityItem;
+export default ActivityListItem;

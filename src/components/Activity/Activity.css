@@ -1,7 +1,7 @@
-.activities_tab_header {
+.activity__tabs__container {
   overflow: auto;
 }
-.activities_tab_header a {
+.activity__tabs__container a {
   white-space: nowrap;
 }
 .activities_buttons_groups {
@@ -31,6 +31,10 @@
   color: var(--white);
   background: var(--light_blue) !important;
   border-color: var(--light_blue);
+  border-left-color: var(--white);
+}
+.activities_buttons_groups .button_group .button_group_single_btn:first-child {
+  border-left-color: var(--light_blue);
 }
 .activities_buttons_groups .button_group .button_group_single_btn:hover svg {
   fill: var(--white);
@@ -68,4 +72,50 @@
   + span:not(.lever):after {
   background: var(--light_blue) !important;
   border-color: var(--light_blue) !important;
+}
+
+/* Activity calendar & list Tab */
+.activity_calendar_list_tab .tabs {
+  height: 40px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.activity_calendar_list_tab .tabs .tab a {
+  color: var(--dark_blue);
+  background: var(--gray_light);
+}
+.activity_calendar_list_tab .tabs .tab a:first-child {
+  border-right: 1px solid var(--white);
+}
+.activity_calendar_list_tab .tabs .tab a:hover,
+.activity_calendar_list_tab .tabs .tab a.active {
+  background: var(--dark_blue);
+  color: var(--white);
+}
+.activity_calendar_list_tab .tabs .indicator {
+  display: none;
+}
+.activity_select_field {
+  height: 40px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+}
+.activity_select_field.tasks {
+  width: 124px;
+}
+.activity_select_field.columns {
+  width: 112px;
+}
+.activity_select_field.actions {
+  width: 93px;
+}
+.activity_select_field:focus {
+  outline: 0;
+}
+.activity_select_field,
+.activity_select_field option {
+  font-size: 14px;
+  color: var(--gray);
+  font-family: var(--poppins);
 }

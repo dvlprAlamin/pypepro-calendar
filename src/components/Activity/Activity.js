@@ -1,9 +1,10 @@
 import React from 'react';
-import { tableData } from '../../fakeData/fakeData';
 import './Activity.css'
 import IconButton from '../Shared/IconButton/IconButton';
-import ActivityItem from './ActivityItem';
+import ActivityList from './ActivityList';
+import MyCalendar from '../Calendar/Calendar';
 const Activity = () => {
+
     return (
         <div className="mr-0 bg-gray-light">
             <div>
@@ -39,20 +40,63 @@ const Activity = () => {
                     <IconButton bg="#3C7EF3" title="Add New Activity" icon="add" />
                 </div>
                 <div className="col s12 white">
-                    <div className="activities_tab_header d-flex align-items-center my-2">
-                        <a href="!#"
-                            className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</a>
-                        <a href="!#"
-                            className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 d-flex align-items-center mr-1">
-                            <i className="material-icons mr-3">
-                                navigate_before
-                            </i>
-                            April 2021
-                            <i className="material-icons ml-3">
-                                navigate_next
-                            </i>
-                        </a>
+                    {/* <div className="rbc-calendar">
 
+                        <div class="rbc-toolbar">
+                            <span class="rbc-btn-group">
+                                <button type="button">Today</button>
+                                <button type="button">Back</button>
+                                <button type="button">Next</button>
+                            </span>
+                            <span class="rbc-toolbar-label">June 2021</span>
+                            <span class="rbc-btn-group">
+                                <button type="button" class="">Month</button>
+                                <button type="button" class="rbc-active">Week</button>
+                                <button type="button" class="">Day</button>
+                                <button type="button" class="">Agenda</button>
+                            </span>
+                        </div>
+                    </div> */}
+                    <div className="activity__tabs__container my-2 row">
+                        <div className="col l4 d-flex">
+                            <a href="!#"
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</a>
+                            <a href="!#"
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 d-flex align-items-center mr-1">
+                                <i className="material-icons mr-3">
+                                    navigate_before
+                                </i>
+                                April 2021
+                                <i className="material-icons ml-3">
+                                    navigate_next
+                                </i>
+                            </a>
+                        </div>
+                        <div className="col l5 offset-l2 d-flex">
+                            <div className="mr-3">
+                                <select className="d-block activity_select_field tasks">
+                                    <option selected hidden>Show Tasks</option>
+                                    <option value="appointments">Show Appointments</option>
+                                    <option value="both">Show Both</option>
+                                </select>
+                            </div>
+                            <div className="activity_calendar_list_tab">
+                                <ul className="tabs d-inline-flex align-items-center">
+                                    <li className="tab"><a className="active list py-0 px-3" href="#test1">List</a></li>
+                                    <li className="tab"><a className="calendar py-0 px-3" href="#test2">Calendar</a></li>
+                                </ul>
+                            </div>
+                            <select className="d-block activity_select_field columns ml-3">
+                                <option selected hidden>Columns</option>
+                                <option value="option">option</option>
+                                <option value="option">option</option>
+                            </select>
+                            <select className="d-block activity_select_field actions ml-3">
+                                <option selected hidden>Actions</option>
+                                <option value="option">option</option>
+                                <option value="option">option</option>
+                            </select>
+                        </div>
                     </div>
                     <div
                         className="activities_buttons_groups d-flex justify-content-between py-2">
@@ -114,41 +158,14 @@ const Activity = () => {
 
                         </div>
                     </div>
-                    <table className="activities_items_table" cellSpacing="10">
-                        <thead className="bg-gray-light py-1">
-                            <tr className="px-1">
-                                <td>
-                                    <label>
-                                        <input type="checkbox" className="filled-in" />
-                                        <span className="text-dark-blue"> Title</span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Due Date</h5>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Duration</h5>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Deal Title</h5>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Contact Name</h5>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Company Name</h5>
-                                </td>
-                                <td>
-                                    <h5 className="m-0 text-dark-blue">Tags</h5>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                tableData.map((item, i) => <ActivityItem item={item} key={i} />)
-                            }
-                        </tbody>
-                    </table>
+
+                    <div id="test1" class="col s12">
+                        <ActivityList />
+                    </div>
+                    <div id="test2" class="col s12">
+                        <MyCalendar />
+                    </div>
+
                 </div>
             </div>
             {/* <div className="">

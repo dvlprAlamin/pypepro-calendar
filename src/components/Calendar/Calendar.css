@@ -683,3 +683,35 @@ button.rbc-input::-moz-focus-inner {
 .rbc-toolbar .rbc-btn-group:last-child button:nth-child(3) {
   border-radius: 0 5px 5px 0;
 }
+
+.rbc-calendar {
+  position: relative;
+}
+.rbc-toolbar .rbc-btn-group {
+  position: absolute;
+  top: -105px;
+}
+.rbc-toolbar .rbc-btn-group:first-child {
+  left: 0;
+}
+.rbc-toolbar .rbc-btn-group:last-child {
+  right: 0;
+}
+.rbc-toolbar .rbc-btn-group:last-child button {
+  border: 0;
+  background: var(--gray_light);
+  color: var(--dark_blue);
+  height: 40px;
+  padding-bottom: 8px;
+}
+.rbc-toolbar .rbc-btn-group:last-child button {
+  border-left: 1px solid var(--white);
+}
+.rbc-toolbar .rbc-btn-group:last-child button:first-child {
+  border-left: 0;
+}
+.rbc-toolbar .rbc-btn-group:last-child button:hover,
+.rbc-toolbar .rbc-btn-group:last-child button.rbc-active {
+  background: var(--dark_blue);
+  color: var(--white);
+}
