@@ -1,0 +1,71 @@
+.activities_tab_header {
+  overflow: auto;
+}
+.activities_tab_header a {
+  white-space: nowrap;
+}
+.activities_buttons_groups {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(19, 49, 89, 0.05);
+}
+.activities_buttons_groups .button_group {
+  height: 40px;
+  overflow: hidden;
+}
+.activities_buttons_groups .button_group .button_group_single_btn svg {
+  fill: var(--dark-blue-65);
+}
+.activities_buttons_groups .button_group .button_group_single_btn {
+  border: 1px solid var(--gray_dark);
+  transition: 0.3s linear;
+  height: 100%;
+  cursor: pointer;
+}
+.activities_buttons_groups .button_group .button_group_single_btn:hover i,
+.activities_buttons_groups .button_group .button_group_single_btn.active i {
+  color: var(--white);
+}
+.activities_buttons_groups .button_group .button_group_single_btn:hover,
+.activities_buttons_groups .button_group .button_group_single_btn.active {
+  color: var(--white);
+  background: var(--light_blue) !important;
+  border-color: var(--light_blue);
+}
+.activities_buttons_groups .button_group .button_group_single_btn:hover svg {
+  fill: var(--white);
+}
+.activities_items_table h5,
+.activities_items_table thead label span {
+  font-size: 20px !important;
+}
+.activities_items_table tbody label span {
+  font-size: 14px;
+  color: rgba(19, 49, 89, 0.5);
+}
+.activities_items_table tr {
+  border: 1px solid rgba(60, 126, 243, 0.1);
+  border-radius: 10px !important;
+}
+.activities_items_table input[type="checkbox"].filled-in:checked ~ span {
+  color: var(--light_blue);
+}
+.activities_items_table input[type="checkbox"].filled-in:checked tr {
+  background: var(--light_blue) !important;
+}
+.activities_items_table
+  input[type="checkbox"].filled-in
+  + span:not(.lever):after {
+  border-radius: 5px !important;
+}
+.activities_items_table
+  input[type="checkbox"].filled-in
+  + span:not(.lever):after {
+  border-color: rgba(60, 127, 243, 0.35) !important;
+}
+.activities_items_table
+  input[type="checkbox"].filled-in:checked
+  + span:not(.lever):after {
+  background: var(--light_blue) !important;
+  border-color: var(--light_blue) !important;
+}

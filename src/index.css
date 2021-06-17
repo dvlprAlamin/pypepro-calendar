@@ -1,13 +1,106 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 80px 0 0 258px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*****************************
+           Common Style 
+  ******************************/
+:root {
+  --light-blue-10: rgba(60, 126, 243, 0.1);
+  --yellow: #f2c94c;
+  --yellow-10: rgba(242, 200, 76, 0.1);
+  --shade: #f0efff;
+  --green: #6fcf97;
+  --green-10: rgba(39, 174, 95, 0.1);
+  --red-10: rgba(255, 38, 74, 0.1);
+  --dark-blue-05: rgba(19, 49, 89, 0.05);
+  --dark-blue-10: rgba(19, 49, 89, 0.1);
+  --dark-blue-65: rgba(19, 49, 89, 0.65);
+}
+
+.text-gray {
+  color: var(--gray) !important;
+}
+.text-light-blue {
+  color: var(--light_blue);
+}
+.text-red {
+  color: var(--red);
+}
+.text-dark-blue {
+  color: var(--dark_blue);
+}
+.text-dark-blue-65 {
+  color: var(--dark-blue-65);
+}
+.text-green {
+  color: var(--green);
+}
+.text-yellow {
+  color: var(--yellow);
+}
+.bg-gray-light {
+  background: var(--gray_light);
+}
+.bg-gray-dark {
+  background: var(--gray_dark);
+}
+.bg-light-blue {
+  background: var(--light_blue);
+}
+.bg-light-blue-10 {
+  background: var(--light-blue-10);
+}
+.bg-dark-blue-10 {
+  background: var(--dark-blue-10);
+}
+.bg-dark-blue-05 {
+  background: var(--dark-blue-05);
+}
+.bg-red {
+  background: var(--red);
+}
+.bg-red-10 {
+  background: var(--red-10);
+}
+.bg-red-65 {
+  background: rgba(255, 38, 74, 0.65);
+}
+.bg-yellow {
+  background: var(--yellow);
+}
+.bg-yellow-10 {
+  background: var(--yellow-10);
+}
+.bg-shade {
+  background: var(--shade);
+}
+.bg-green {
+  background: var(--green);
+}
+.bg-green-10 {
+  background: var(--green-10);
+}
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.radius-5 {
+  border-radius: 5px !important;
+}
+.radius-10 {
+  border-radius: 10px !important;
+}
+p,
+h6 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 16px;
+  color: var(--dark_blue);
 }
