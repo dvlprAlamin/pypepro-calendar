@@ -720,3 +720,24 @@ button.rbc-input::-moz-focus-inner {
   background: var(--dark_blue);
   color: var(--white);
 }
+
+@media (max-width: 1320px) {
+  .rbc-toolbar .rbc-btn-group {
+    top: -166px;
+  }
+}
+@media (max-width: 1199px) {
+  .rbc-toolbar .rbc-btn-group {
+    top: -164px;
+  }
+}
+@media (max-width: 1040px) {
+  .rbc-toolbar .rbc-btn-group {
+    top: -164px;
+  }
+}
+@media (max-width: 992px) {
+  .rbc-toolbar .rbc-btn-group:first-child {
+    top: -224px;
+  }
+}

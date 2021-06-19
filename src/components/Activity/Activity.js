@@ -52,33 +52,33 @@ const Activity = () => {
                     <ActivityModal />
                 </div>
                 <div className="white">
-                    <div className="activity__header__bottom my-2 py-3 row">
-                        <div className="col l4 d-flex p-0 navigate_buttons">
-                            {
+                    <div className="activity__header__bottom my-2 row">
+                        <div className="col l3 d-flex p-0 navigate_buttons py-3" style={{ visibility: !isCalendar ? 'visible' : 'hidden' }}>
+                            {/* {
                                 !isCalendar &&
-                                <>
-                                    <span
-                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</span>
-                                    <span
-                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
-                                        <i className="material-icons mr-3">
-                                            navigate_before
-                                        </i>
-                                    </span>
-                                    <span
-                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-1 d-flex align-items-center mr-1">
-                                        April 2021
-                                    </span>
-                                    <span
-                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
-                                        <i className="material-icons ml-3">
-                                            navigate_next
-                                        </i>
-                                    </span>
-                                </>
-                            }
+                                <> */}
+                            <span
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</span>
+                            <span
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
+                                <i className="material-icons mr-1">
+                                    navigate_before
+                                </i>
+                            </span>
+                            <span
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-1 d-flex align-items-center mr-1">
+                                April 2021
+                            </span>
+                            <span
+                                className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
+                                <i className="material-icons ml-1">
+                                    navigate_next
+                                </i>
+                            </span>
+                            {/* </>
+                            } */}
                         </div>
-                        <div className="col l6 offset-l2 d-flex justify-content-end p-0">
+                        <div className="col l6 offset-l3 d-flex justify-content-end px-0 py-3 header_bottom_middle">
                             <div className="mr-3">
                                 <select className="d-block activity_select_field tasks">
                                     <option selected hidden>Show Tasks</option>
@@ -176,7 +176,7 @@ const Activity = () => {
                                 <option value="2">option</option>
                             </select>
                         </div>
-                        <div className="py-2">
+                        <div className="p-2 mt-2">
                             {
                                 isCalendar ?
                                     <div className="d-flex calendar_info_item_checkbox">
