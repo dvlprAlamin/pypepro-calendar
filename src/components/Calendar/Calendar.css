@@ -689,13 +689,17 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-toolbar .rbc-btn-group {
   position: absolute;
-  top: -105px;
+  top: -102px;
 }
 .rbc-toolbar .rbc-btn-group:first-child {
   left: 0;
 }
 .rbc-toolbar .rbc-btn-group:last-child {
   right: 0;
+}
+.rbc-toolbar .rbc-btn-group:first-child button {
+  border: 0;
+  font-family: var(--poppins);
 }
 .rbc-toolbar .rbc-btn-group:last-child button {
   border: 0;

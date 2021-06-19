@@ -1,0 +1,59 @@
+#task_appointment_modal {
+  /* top: 300px !important; */
+  top: 35% !important;
+  max-width: 556px;
+}
+#task_appointment_modal,
+#task_appointment_modal .tabs {
+  overflow-x: hidden;
+}
+#task_appointment_modal .tabs .indicator {
+  display: none;
+}
+#task_appointment_modal .tabs .tab a {
+  text-transform: capitalize;
+  color: var(--dark_blue);
+}
+#task_appointment_modal .tabs .tab a svg {
+  fill: var(--dark_blue);
+}
+#task_appointment_modal .tabs .tab a:hover svg,
+#task_appointment_modal .tabs .tab a.active svg {
+  fill: var(--white);
+}
+#task_appointment_modal .tabs .tab a:hover,
+#task_appointment_modal .tabs .tab a.active {
+  background: var(--light_blue);
+  color: var(--white);
+}
+#task_appointment_modal .single_modal_tab_task {
+  border-left: 5px solid transparent;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid var(--gray_dark);
+}
+#task_appointment_modal .single_modal_tab_task:hover {
+  border-left-color: var(--light_green);
+  background: rgba(60, 127, 243, 0.1);
+}
+#task_appointment_modal .tab_task_round_icon {
+  border: 1px solid var(--light_blue);
+  border-radius: 50%;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+#task_appointment_task_tab
+  input[type="checkbox"].filled-in
+  + span:not(.lever):after {
+  border-radius: 5px !important;
+  border-color: var(--light_blue) !important;
+}
+
+#task_appointment_task_tab input[type="checkbox"].filled-in + span:not(.lever) {
+  padding-left: 30px;
+}
+#task_appointment_task_tab
+  input[type="checkbox"].filled-in:checked
+  + span:not(.lever):after {
+  background: var(--light_blue) !important;
+}

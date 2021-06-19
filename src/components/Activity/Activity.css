@@ -5,9 +5,10 @@
   white-space: nowrap;
 }
 .activities_buttons_groups {
-  border-top: 1px solid;
+  /* border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: rgba(19, 49, 89, 0.05);
+  border-color: rgba(19, 49, 89, 0.05); */
+  flex-wrap: wrap;
 }
 .activities_buttons_groups .button_group {
   height: 40px;
@@ -26,52 +27,13 @@
 .activities_buttons_groups .button_group .button_group_single_btn.active i {
   color: var(--white);
 }
-.activities_buttons_groups .button_group .button_group_single_btn:hover,
-.activities_buttons_groups .button_group .button_group_single_btn.active {
+.activities_buttons_groups .button_group .button_group_single_btn:hover {
   color: var(--white);
   background: var(--light_blue) !important;
   border-color: var(--light_blue);
-  border-left-color: var(--white);
-}
-.activities_buttons_groups .button_group .button_group_single_btn:first-child {
-  border-left-color: var(--light_blue);
 }
 .activities_buttons_groups .button_group .button_group_single_btn:hover svg {
   fill: var(--white);
-}
-.activities_items_table h5,
-.activities_items_table thead label span {
-  font-size: 20px !important;
-}
-.activities_items_table tbody label span {
-  font-size: 14px;
-  color: rgba(19, 49, 89, 0.5);
-}
-.activities_items_table tr {
-  border: 1px solid rgba(60, 126, 243, 0.1);
-  border-radius: 10px !important;
-}
-.activities_items_table input[type="checkbox"].filled-in:checked ~ span {
-  color: var(--light_blue);
-}
-.activities_items_table input[type="checkbox"].filled-in:checked tr {
-  background: var(--light_blue) !important;
-}
-.activities_items_table
-  input[type="checkbox"].filled-in
-  + span:not(.lever):after {
-  border-radius: 5px !important;
-}
-.activities_items_table
-  input[type="checkbox"].filled-in
-  + span:not(.lever):after {
-  border-color: rgba(60, 127, 243, 0.35) !important;
-}
-.activities_items_table
-  input[type="checkbox"].filled-in:checked
-  + span:not(.lever):after {
-  background: var(--light_blue) !important;
-  border-color: var(--light_blue) !important;
 }
 
 /* Activity calendar & list Tab */
@@ -110,6 +72,9 @@
 .activity_select_field.actions {
   width: 93px;
 }
+.activity_select_field.selected_users {
+  width: 158px;
+}
 .activity_select_field:focus {
   outline: 0;
 }
@@ -118,4 +83,31 @@
   font-size: 14px;
   color: var(--gray);
   font-family: var(--poppins);
+}
+
+.calendar_info_item_checkbox
+  input[type="checkbox"].filled-in
+  + span:not(.lever):after {
+  border-radius: 5px !important;
+  border-color: rgba(60, 127, 243, 0.35) !important;
+  background: rgba(60, 127, 243, 0.2);
+}
+
+.calendar_info_item_checkbox
+  input[type="checkbox"].filled-in
+  + span:not(.lever) {
+  padding-left: 25px;
+}
+.calendar_info_item_checkbox
+  input[type="checkbox"].filled-in:checked
+  + span:not(.lever):after {
+  background: var(--light_blue) !important;
+  border-color: var(--light_blue) !important;
+}
+.calendar_info_item_checkbox span {
+  font-size: 14px;
+}
+.calendar_info_item_checkbox span i {
+  transform: rotate(180deg);
+  font-size: 18px;
 }

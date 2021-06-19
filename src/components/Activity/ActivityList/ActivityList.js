@@ -1,11 +1,11 @@
 import React from 'react';
-import { tableData } from '../../fakeData/fakeData';
+import { tableData } from '../../../fakeData/fakeData';
 import ActivityListItem from './ActivityListItem';
 
 const ActivityList = () => {
     return (
         <table className="activities_items_table" cellSpacing="10">
-            <thead className="bg-gray-light py-1">
+            <thead className="white py-1">
                 <tr className="px-1">
                     <td>
                         <label>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-
+import './ActivityList.css'
 const ActivityListItem = ({ item }) => {
-    const { title, dueDate, duration, dealTitle, contactName, companyName, tags } = item;
+    const { title, dueDate, dueRed, duration, dealTitle, contactName, companyName, tags } = item;
     const [checked, setChecked] = useState(false);
     return (
-        <tr style={{ background: checked ? 'rgba(60, 127, 243, 0.1)' : '#ffffff', marginTop: '10px !important' }}>
+        <tr style={{ background: checked ? 'rgba(60, 127, 243, 0.1)' : '#ffffff' }}>
             <td>
                 <label>
                     <input type="checkbox" onChange={() => setChecked(!checked)} className="filled-in" />
@@ -19,22 +19,22 @@ const ActivityListItem = ({ item }) => {
                 </label>
             </td>
             <td>
-                <p className="m-0 text-dark-blue-65">{dueDate}</p>
+                <p className={`m-0 ${dueRed ? 'text-red' : 'text-dark-blue-65'}`}>{dueDate}</p>
             </td>
             <td>
-                <h5 className="m-0 text-dark-blue-65">{duration}</h5>
+                <p className="m-0 text-dark-blue-65">{duration}</p>
             </td>
             <td>
-                <h5 className="m-0 text-dark-blue-65">{dealTitle}</h5>
+                <p className="m-0 text-dark-blue-65">{dealTitle}</p>
             </td>
             <td>
-                <h5 className="m-0 text-dark-blue-65">{contactName} </h5>
+                <p className="m-0 text-dark-blue-65">{contactName} </p>
             </td>
             <td>
-                <h5 className="m-0 text-dark-blue-65">{companyName}</h5>
+                <p className="m-0 text-dark-blue-65">{companyName}</p>
             </td>
             <td>
-                <h5 className="m-0 text-dark-blue-65">{tags}</h5>
+                <p className="m-0 text-dark-blue-65">{tags}</p>
             </td>
         </tr>
     );

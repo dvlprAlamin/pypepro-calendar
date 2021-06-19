@@ -11,6 +11,7 @@ export const tableData = [
     {
         title: 'Awesome feel',
         dueDate: 'April 28th 2021 12:51 pm',
+        dueRed: true,
         duration: '01:30',
         dealTitle: 'Test Deal',
         contactName: 'John Do',
@@ -29,6 +30,7 @@ export const tableData = [
     {
         title: 'Awesome feel',
         dueDate: 'April 28th 2021 12:51 pm',
+        dueRed: true,
         duration: '01:30',
         dealTitle: 'Test Deal',
         contactName: 'John Do',
@@ -38,6 +40,7 @@ export const tableData = [
     {
         title: 'Awesome feel',
         dueDate: 'April 28th 2021 12:51 pm',
+        dueRed: true,
         duration: '01:30',
         dealTitle: 'Test Deal',
         contactName: 'John Do',
@@ -85,15 +88,15 @@ export const eventList = [
     {
         id: 2,
         title: 'DTS STARTS',
-        start: new Date(2016, 2, 13, 0, 0, 0),
-        end: new Date(2016, 2, 20, 0, 0, 0),
+        start: new Date(2021, 2, 13, 0, 0, 0),
+        end: new Date(2021, 2, 20, 0, 0, 0),
     },
 
     {
         id: 3,
         title: 'DTS ENDS',
-        start: new Date(2016, 10, 6, 0, 0, 0),
-        end: new Date(2016, 10, 13, 0, 0, 0),
+        start: new Date(2021, 10, 6, 0, 0, 0),
+        end: new Date(2021, 10, 13, 0, 0, 0),
     },
 
     {
@@ -112,8 +115,8 @@ export const eventList = [
     {
         id: 6,
         title: 'Meeting',
-        start: new Date(2021, 3, 12, 10, 30, 0, 0),
-        end: new Date(2021, 3, 12, 12, 30, 0, 0),
+        start: new Date(2021, 5, 12, 10, 30, 0, 0),
+        end: new Date(2021, 5, 12, 12, 30, 0, 0),
         desc: 'Pre-meeting meeting, to prepare for the meeting',
     },
     {
@@ -243,5 +246,36 @@ export const eventList = [
         title: 'Go to the gym',
         start: new Date(2021, 3, 14, 18, 30, 0),
         end: new Date(2021, 3, 14, 20, 0, 0),
+    },
+]
+
+
+// Task Appointment modal task data
+
+export const taskData = [
+    {
+        time: '1.00 AM',
+        text: 'Follow Up with Evelyn Abramson',
+        status: 'Overdue'
+    },
+    {
+        time: '1.00 AM',
+        text: 'Follow Up with Evelyn Abramson',
+        status: 'Complete'
+    },
+    {
+        time: '1.00 AM',
+        text: 'Follow Up with Evelyn Abramson',
+        status: 'Overdue'
+    },
+    {
+        time: '1.00 AM',
+        text: 'Follow Up with Evelyn Abramson',
+        status: 'Complete'
+    },
+    {
+        time: '1.00 AM',
+        text: 'Follow Up with Evelyn Abramson',
+        status: 'Complete'
     },
 ]
