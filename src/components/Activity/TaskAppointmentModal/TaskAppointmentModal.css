@@ -1,7 +1,7 @@
 #task_appointment_modal {
-  /* top: 300px !important; */
-  top: 35% !important;
+  top: 30% !important;
   max-width: 556px;
+  height: 70%;
 }
 #task_appointment_modal,
 #task_appointment_modal .tabs {

@@ -1,3 +1,12 @@
+#add_activity_modal {
+  width: fit-content;
+}
+#add_activity_modal h4 {
+  font-size: 20px;
+}
+#add_activity_modal h6 {
+  font-size: 14px;
+}
 .add_activity_select_input,
 .add_activity_text_field {
   border: 1px solid var(--gray_dark) !important;
@@ -6,6 +15,7 @@
   padding-left: 15px !important;
   box-sizing: border-box !important;
   font-family: var(--poppins);
+  font-size: 14px !important;
 }
 .add_activity_select_input:focus,
 .add_activity_text_field:focus {
@@ -30,7 +40,7 @@
 .add_task_reminder_time {
   max-width: 140px;
   height: 30px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--dark_blue);
 }
 
@@ -43,11 +53,23 @@ input[type="checkbox"].add_activity_checkbox + span:not(.lever):after {
 input[type="checkbox"].add_activity_checkbox:checked + span:not(.lever):after {
   background: var(--light_blue) !important;
 }
-
+.activity_checkbox_label span {
+  font-size: 14px !important;
+}
 .add_activity_footer_buttons span {
   height: 26px;
   width: 26px;
 }
 .add_activity_footer_buttons span i {
   font-size: 20px;
+}
+.add_activity_footer_buttons a,
+.add_activity_footer_buttons a i {
+  transition: 0.3s linear;
+}
+.add_activity_footer_buttons a:hover {
+  background: var(--dark_blue);
+}
+.add_activity_footer_buttons a:hover i {
+  color: var(--dark_blue);
 }

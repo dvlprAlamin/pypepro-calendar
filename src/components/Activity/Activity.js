@@ -8,14 +8,14 @@ import TaskAppointmentModal from './TaskAppointmentModal/TaskAppointmentModal';
 const Activity = () => {
     const [isCalendar, setIsCalendar] = useState(false)
     return (
-        <div className="mr-0 bg-gray-light">
+        <div className="mr-0 white p-3 radius-10">
             <div>
                 <div
-                    className="d-flex justify-content-between align-items-center mb-5">
-                    <h4 className="m-0">Activity</h4>
-                    <div className="d-flex">
-                        <a href="!#"
-                            className="waves-effect bg-light-blue-10 text-light-blue radius-5 py-2 px-3 d-flex align-items-center mr-1">
+                    className="d-flex justify-content-between align-items-center activity__top__header">
+                    <h4 className="m-0 pt-1 pb-2">Activity</h4>
+                    <div className="d-flex activity__header__buttons pt-1 pb-2">
+                        <span
+                            className="waves-effect bg-light-blue-10 text-light-blue radius-5 py-2 px-3 d-flex align-items-center mr-3">
                             <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.5 0.84375C4.89111 0.84375 0.34375 5.39111 0.34375 11C0.34375 16.6001 4.90039 21.1562 10.5 21.1562C16.1084 21.1562 20.6562 16.6084 20.6562 11C20.6562 5.3999 16.1001 0.84375 10.5 0.84375ZM15.7734 12.5625H9.91406C9.86226 12.5625 9.81258 12.5419 9.77596 12.5053C9.73933 12.4687 9.71875 12.419 9.71875 12.3672V4.16406C9.71875 4.11226 9.73933 4.06258 9.77596 4.02596C9.81258 3.98933 9.86226 3.96875 9.91406 3.96875H11.0859C11.1377 3.96875 11.1874 3.98933 11.224 4.02596C11.2607 4.06258 11.2812 4.11226 11.2812 4.16406V11H15.7734C15.8252 11 15.8749 11.0206 15.9115 11.0572C15.9482 11.0938 15.9688 11.1435 15.9688 11.1953V12.3672C15.9688 12.419 15.9482 12.4687 15.9115 12.5053C15.8749 12.5419 15.8252 12.5625 15.7734 12.5625Z" fill="#3C7EF3" />
                             </svg>
@@ -24,9 +24,9 @@ const Activity = () => {
                                 <path d="M9 0.875C4.51289 0.875 0.875 4.51289 0.875 9C0.875 13.4801 4.52031 17.125 9 17.125C13.4867 17.125 17.125 13.4867 17.125 9C17.125 4.51992 13.4801 0.875 9 0.875ZM13.2188 10.25H8.53125C8.48981 10.25 8.45007 10.2335 8.42076 10.2042C8.39146 10.1749 8.375 10.1352 8.375 10.0938V3.53125C8.375 3.48981 8.39146 3.45007 8.42076 3.42076C8.45007 3.39146 8.48981 3.375 8.53125 3.375H9.46875C9.51019 3.375 9.54993 3.39146 9.57924 3.42076C9.60854 3.45007 9.625 3.48981 9.625 3.53125V9H13.2188C13.2602 9 13.2999 9.01646 13.3292 9.04576C13.3585 9.07507 13.375 9.11481 13.375 9.15625V10.0938C13.375 10.1352 13.3585 10.1749 13.3292 10.2042C13.2999 10.2335 13.2602 10.25 13.2188 10.25Z" />
                             </svg>
                             Today Due : 2
-                        </a>
-                        <a href="!#"
-                            className="waves-effect bg-red-10 text-red radius-5 py-2 px-3 d-flex align-items-center mr-1">
+                        </span>
+                        <span
+                            className="waves-effect bg-red-10 text-red radius-5 py-2 px-3 d-flex align-items-center mr-3">
                             <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -34,16 +34,16 @@ const Activity = () => {
                                     fill="#FF264A" />
                             </svg>
                             Overdue : 77
-                        </a>
-                        <a href="!#"
-                            className="waves-effect bg-green-10 text-green radius-5 py-2 px-3 d-flex align-items-center mr-1">
+                        </span>
+                        <span
+                            className="waves-effect bg-green-10 text-green radius-5 py-2 px-3 d-flex align-items-center">
                             <i className="material-icons mr-2 text-green">
                                 emoji_emotions
                             </i>
                             Complete: 38
-                        </a>
+                        </span>
                     </div>
-                    <a href="#add_activity_modal" style={{ background: '#3C7EF3', cursor: 'pointer' }} className="modal-trigger d-inline-flex align-items-center waves-effect white-text py-2 px-3 radius-10">
+                    <a href="#add_activity_modal" className="mt-1 mb-1 modal-trigger add_activity_btn d-inline-flex align-items-center waves-effect white-text py-2 px-3 radius-10">
                         <i className="material-icons text-light-blue white circle p-1 mr-2">
                             add
                         </i>
@@ -51,34 +51,34 @@ const Activity = () => {
                     </a>
                     <ActivityModal />
                 </div>
-                <div className="col s12 white">
-                    <div className="activity__tabs__container my-2 row">
-                        <div className="col l4 d-flex">
+                <div className="white">
+                    <div className="activity__header__bottom my-2 py-3 row">
+                        <div className="col l4 d-flex p-0 navigate_buttons">
                             {
                                 !isCalendar &&
                                 <>
-                                    <a href="!#"
-                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</a>
-                                    <a href="!#"
+                                    <span
+                                        className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-3 mr-1">Today</span>
+                                    <span
                                         className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
                                         <i className="material-icons mr-3">
                                             navigate_before
                                         </i>
-                                    </a>
-                                    <a href="!#"
+                                    </span>
+                                    <span
                                         className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-1 d-flex align-items-center mr-1">
                                         April 2021
-                                    </a>
-                                    <a href="!#"
+                                    </span>
+                                    <span
                                         className="waves-effect bg-gray-light text-dark-blue radius-5 py-2 px-0 d-flex align-items-center mr-1">
                                         <i className="material-icons ml-3">
                                             navigate_next
                                         </i>
-                                    </a>
+                                    </span>
                                 </>
                             }
                         </div>
-                        <div className="col l6 offset-l2 d-flex justify-content-end">
+                        <div className="col l6 offset-l2 d-flex justify-content-end p-0">
                             <div className="mr-3">
                                 <select className="d-block activity_select_field tasks">
                                     <option selected hidden>Show Tasks</option>
@@ -109,8 +109,8 @@ const Activity = () => {
                         </div>
                     </div>
                     <div
-                        className="activities_buttons_groups d-flex justify-content-between py-2">
-                        <div className="d-flex">
+                        className="activities_buttons_groups d-flex justify-content-between">
+                        <div className="d-flex py-2">
                             <div className="button_group d-flex align-items-center radius-5">
                                 <span
                                     data-target="task_appointment_modal"
@@ -176,41 +176,43 @@ const Activity = () => {
                                 <option value="2">option</option>
                             </select>
                         </div>
-                        {
-                            isCalendar ?
-                                <div className="d-flex calendar_info_item_checkbox">
-                                    <label className="mr-5">
-                                        <input type="checkbox" className="filled-in" />
+                        <div className="py-2">
+                            {
+                                isCalendar ?
+                                    <div className="d-flex calendar_info_item_checkbox">
+                                        <label className="mr-5">
+                                            <input type="checkbox" className="filled-in" />
+                                            <span
+                                                className="d-flex justify-content-start align-items-center black-text">
+                                                Activities I am following
+                                                <i className="material-icons text-dark-blue-65 ml-2">
+                                                    info
+                                                </i>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" className="filled-in" />
+                                            <span
+                                                className="d-flex justify-content-start align-items-center black-text">
+                                                Hide closed activities
+                                                <i className="material-icons text-dark-blue-65 ml-2">
+                                                    info
+                                                </i>
+                                            </span>
+                                        </label>
+                                    </div> :
+                                    <div className="button_group d-flex align-items-center radius-5">
                                         <span
-                                            className="d-flex justify-content-start align-items-center black-text">
-                                            Activities I am following
-                                            <i className="material-icons text-dark-blue-65 ml-2">
-                                                info
-                                            </i>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" className="filled-in" />
-                                        <span
-                                            className="d-flex justify-content-start align-items-center black-text">
-                                            Hide closed activities
-                                            <i className="material-icons text-dark-blue-65 ml-2">
-                                                info
-                                            </i>
-                                        </span>
-                                    </label>
-                                </div> :
-                                <div className="button_group d-flex align-items-center radius-5">
-                                    <span
-                                        className="active button_group_single_btn text-dark-blue-65 white px-2 bg-light-blue d-flex align-items-center justify-content-center">Planned</span>
-                                    {
-                                        ['Overdue', 'Today', 'Tomorrow', 'This Week', 'Next Week', 'Custom'].map(item => (
-                                            <span key={item}
-                                                className="button_group_single_btn text-dark-blue-65 white px-2 bg-light-blue d-flex align-items-center justify-content-center">{item}</span>
-                                        ))
-                                    }
+                                            className="active button_group_single_btn text-dark-blue-65 white px-2 bg-light-blue d-flex align-items-center justify-content-center">Planned</span>
+                                        {
+                                            ['Overdue', 'Today', 'Tomorrow', 'This Week', 'Next Week', 'Custom'].map(item => (
+                                                <span key={item}
+                                                    className="button_group_single_btn text-dark-blue-65 white px-2 bg-light-blue d-flex align-items-center justify-content-center">{item}</span>
+                                            ))
+                                        }
 
-                                </div>}
+                                    </div>}
+                        </div>
                     </div>
 
                     <div id="activity__list__tab" className="col s12">

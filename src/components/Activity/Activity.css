@@ -1,13 +1,30 @@
-.activity__tabs__container {
-  overflow: auto;
+.activity__top__header,
+.activity__header__buttons {
+  flex-wrap: wrap;
 }
-.activity__tabs__container a {
+.activity__top__header h4 {
+  font-size: 24px;
+}
+.activity__top__header .add_activity_btn {
+  background: var(--light_blue);
+}
+.activity__top__header .add_activity_btn:hover {
+  background: var(--dark_blue);
+}
+.activity__top__header .add_activity_btn:hover i {
+  color: var(--dark_blue);
+}
+.activity__header__bottom {
+  overflow: auto;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--gray_dark);
+}
+.activity__header__bottom span {
   white-space: nowrap;
+  font-size: 14px;
 }
 .activities_buttons_groups {
-  /* border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: rgba(19, 49, 89, 0.05); */
   flex-wrap: wrap;
 }
 .activities_buttons_groups .button_group {
@@ -46,6 +63,7 @@
 .activity_calendar_list_tab .tabs .tab a {
   color: var(--dark_blue);
   background: var(--gray_light);
+  text-transform: capitalize;
 }
 .activity_calendar_list_tab .tabs .tab a:first-child {
   border-right: 1px solid var(--white);

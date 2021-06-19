@@ -7,7 +7,7 @@ const TaskAppointmentModal = () => {
         <div id="task_appointment_modal" className="modal mr-4">
             <div className="modal-content p-0">
                 <div className="row">
-                    <div className="col s12">
+                    <div className="col s12 p-0">
                         <ul className="tabs p-0">
                             <li className="tab col s6">
                                 <a className="active p-0 d-flex justify-content-center align-items-center" href="#task_appointment_task_tab">
@@ -31,7 +31,7 @@ const TaskAppointmentModal = () => {
                             </li>
                         </ul>
                     </div>
-                    <div id="task_appointment_task_tab" className="col s12">
+                    <div id="task_appointment_task_tab" className="col s12 p-0">
                         <p className="text-center">Tuesday, April 27, 2021</p>
                         {
                             taskData.map((item, i) => <TaskSingleItem item={item} />)

@@ -75,21 +75,21 @@ const ActivityModal = () => {
                     </a>
                 </div>
                 <div className="row">
-                    <div className="col s12">
+                    <div className="col s12 pl-0">
                         <h6 className="text-dark-blue m-0 text-left mb-2">Title</h6>
                         <input type="text" placeholder="Enter title"
                             className="add_activity_text_field radius-5 white" />
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12">
+                    <div className="col s12 pl-0">
                         <h6 className="text-dark-blue m-0 text-left mb-2">Description</h6>
                         <textarea type="text"
                             className="add_activity_text_field radius-5 pt-3 white"></textarea>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col s12">
+                    <div className="col s12 pl-0">
                         <h6 className="text-dark-blue m-0 text-left mb-2">Assign To</h6>
                         <select className="d-block add_activity_text_field radius-5 white">
                             <option selected hidden>Select an user</option>
@@ -99,17 +99,23 @@ const ActivityModal = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Date</h6>
-                        <input type="date" className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="mr-3">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Date</h6>
+                            <input type="date" className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Time</h6>
-                        <input type="time" className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="mx-2">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Time</h6>
+                            <input type="time" className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Duration (hh:mm)</h6>
-                        <input type="time" className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="ml-3">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Duration (hh:mm)</h6>
+                            <input type="time" className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
                 </div>
                 <div
@@ -117,45 +123,51 @@ const ActivityModal = () => {
                     <h4 className="m-0">Contact</h4>
                 </div>
                 <div className="row">
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Name</h6>
-                        <input type="text" placeholder="Name"
-                            className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="mr-3">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Name</h6>
+                            <input type="text" placeholder="Name"
+                                className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Email</h6>
-                        <input type="email" placeholder="example@gmail.com"
-                            className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="mx-2">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Email</h6>
+                            <input type="email" placeholder="example@gmail.com"
+                                className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
-                    <div className="col m4 s12">
-                        <h6 className="text-dark-blue m-0 text-left mb-2">Phone</h6>
-                        <input type="text" placeholder="+0123456789"
-                            className="add_activity_text_field radius-5 white" />
+                    <div className="col m4 s12 pl-0">
+                        <div className="ml-3">
+                            <h6 className="text-dark-blue m-0 text-left mb-2">Phone</h6>
+                            <input type="text" placeholder="+0123456789"
+                                className="add_activity_text_field radius-5 white" />
+                        </div>
                     </div>
                 </div>
                 <div className="text-left">
-                    <label>
+                    <label className="activity_checkbox_label">
                         <input type="checkbox" className="filled-in add_activity_checkbox" />
                         <span className="text-dark-blue">Send invitation to the attendee</span>
                     </label>
                 </div>
                 <div className="text-left mt-3">
-                    <label>
+                    <label className="activity_checkbox_label">
                         <input type="checkbox" className="filled-in add_activity_checkbox" />
                         <span className="text-dark-blue">Send an email notification to the
                             attendee</span>
                     </label>
                 </div>
                 <div className="text-left mt-3">
-                    <label>
+                    <label className="activity_checkbox_label">
                         <input type="checkbox" className="filled-in add_activity_checkbox" />
                         <span className="text-dark-blue">Remind me</span>
                         <select
-                            className="pt-0 mx-2 d-inline-block radius-5 add_activity_select_input add_task_reminder_time">
+                            className="mx-2 d-inline-block radius-5 add_activity_select_input add_task_reminder_time">
                             <option value="30">30 minutes</option>
                             <option value="40">40 minutes</option>
                         </select>
-                        <h5 className="text-dark-blue d-inline-block m-0">before the event</h5>
+                        <span className="text-dark-blue d-inline-block m-0">before the event</span>
                     </label>
                 </div>
             </div>
@@ -168,7 +180,7 @@ const ActivityModal = () => {
                                 add
                             </i>
                         </span>
-                        Add Task
+                        Add Appointment
                     </a>
                     <a href="!#"
                         className="d-inline-flex align-items-center bg-red white-text  py-2 px-3 radius-10 modal-close ml-3">
