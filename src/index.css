@@ -37,6 +37,9 @@ body {
 .text-green {
   color: var(--green);
 }
+.text-green-2 {
+  color: var(--green2);
+}
 .text-yellow {
   color: var(--yellow);
 }

@@ -1,11 +1,16 @@
 #add_activity_modal {
   width: fit-content;
+  border-radius: 10px 0 0 10px;
 }
 #add_activity_modal h4 {
   font-size: 20px;
 }
 #add_activity_modal h6 {
   font-size: 14px;
+}
+.modal_header {
+  border-bottom: 2px solid var(--white);
+  padding: 1.5rem;
 }
 .add_activity_select_input,
 .add_activity_text_field {
@@ -16,6 +21,7 @@
   box-sizing: border-box !important;
   font-family: var(--poppins);
   font-size: 14px !important;
+  height: 40px !important;
 }
 .add_activity_select_input:focus,
 .add_activity_text_field:focus {
@@ -23,7 +29,10 @@
 }
 
 #add_activity_modal textarea {
-  height: 100px;
+  height: 100px !important;
+}
+.add_activity_top_buttons {
+  margin-right: 190px;
 }
 .add_activity_top_buttons a:hover,
 .add_activity_top_buttons a.active {
@@ -34,7 +43,8 @@
   fill: var(--gray);
   transition: 0.3s linear;
 }
-.add_activity_top_buttons a:hover svg {
+.add_activity_top_buttons a:hover svg,
+.add_activity_top_buttons a.active svg {
   fill: var(--white);
 }
 .add_task_reminder_time {
@@ -60,16 +70,27 @@ input[type="checkbox"].add_activity_checkbox:checked + span:not(.lever):after {
   height: 26px;
   width: 26px;
 }
-.add_activity_footer_buttons span i {
-  font-size: 20px;
+.add_activity_footer_buttons span.appointment svg {
+  fill: var(--light_blue);
+}
+.add_activity_footer_buttons span.close svg {
+  fill: var(--red);
+}
+.add_activity_footer_buttons a {
+  font-size: 16px;
 }
 .add_activity_footer_buttons a,
-.add_activity_footer_buttons a i {
+.add_activity_footer_buttons span svg {
   transition: 0.3s linear;
 }
 .add_activity_footer_buttons a:hover {
   background: var(--dark_blue);
 }
-.add_activity_footer_buttons a:hover i {
-  color: var(--dark_blue);
+.add_activity_footer_buttons a:hover svg {
+  fill: var(--dark_blue);
+}
+@media (max-width: 1150px) {
+  .add_activity_top_buttons {
+    margin-right: 0px;
+  }
 }

@@ -13,6 +13,7 @@
 #task_appointment_modal .tabs .tab a {
   text-transform: capitalize;
   color: var(--dark_blue);
+  background: var(--gray_light);
 }
 #task_appointment_modal .tabs .tab a svg {
   fill: var(--dark_blue);
@@ -31,6 +32,14 @@
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid var(--gray_dark);
 }
+.single_modal_tab_task .status {
+  font-size: 16px;
+}
+.single_modal_tab_task .time,
+.single_modal_tab_task label .comment {
+  font-size: 14px;
+}
+
 #task_appointment_modal .single_modal_tab_task:hover {
   border-left-color: var(--light_green);
   background: rgba(60, 127, 243, 0.1);
@@ -48,7 +57,9 @@
   border-radius: 5px !important;
   border-color: var(--light_blue) !important;
 }
-
+#task_appointment_task_tab > p {
+  font-size: 14px;
+}
 #task_appointment_task_tab input[type="checkbox"].filled-in + span:not(.lever) {
   padding-left: 30px;
 }

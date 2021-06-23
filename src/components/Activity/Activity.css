@@ -5,8 +5,18 @@
 .activity__top__header h4 {
   font-size: 24px;
 }
+.activity__header__buttons span {
+  font-size: 16px;
+}
 .activity__top__header .add_activity_btn {
   background: var(--light_blue);
+  height: 40px;
+  width: 175px;
+  font-size: 14px;
+}
+.add_activity_btn span {
+  height: 26px;
+  width: 26px;
 }
 .activity__top__header .add_activity_btn:hover {
   background: var(--dark_blue);
@@ -31,6 +41,9 @@
   height: 40px;
   overflow: hidden;
 }
+.activities_buttons_groups .button_group .button_group_single_btn {
+  font-size: 14px;
+}
 .activities_buttons_groups .button_group .button_group_single_btn svg {
   fill: var(--dark-blue-65);
 }
@@ -39,6 +52,9 @@
   transition: 0.3s linear;
   height: 100%;
   cursor: pointer;
+}
+.icon_buttons .button_group_single_btn {
+  width: 40px;
 }
 .activities_buttons_groups .button_group .button_group_single_btn:hover i,
 .activities_buttons_groups .button_group .button_group_single_btn.active i {
@@ -86,6 +102,12 @@
 }
 .activity_select_field.columns {
   width: 112px;
+  background: url(../../img/column.png);
+  background-repeat: no-repeat;
+  background-position: 7px center;
+  padding-left: 30px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 .activity_select_field.actions {
   width: 93px;
@@ -109,6 +131,9 @@
   border-radius: 5px !important;
   border-color: rgba(60, 127, 243, 0.35) !important;
   background: rgba(60, 127, 243, 0.2);
+  height: 18px;
+  width: 18px;
+  margin-top: 3px;
 }
 
 .calendar_info_item_checkbox
@@ -123,11 +148,7 @@
   border-color: var(--light_blue) !important;
 }
 .calendar_info_item_checkbox span {
-  font-size: 14px;
-}
-.calendar_info_item_checkbox span i {
-  transform: rotate(180deg);
-  font-size: 18px;
+  font-size: 14px !important;
 }
 
 @media (max-width: 1040px) {
